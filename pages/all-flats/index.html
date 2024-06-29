@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All flats</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/form_button.css">
+    <link rel="stylesheet" href="../../css/header_style.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../assets/company.png" alt="Company Logo">
+        </div>
+        <div class="user-info">
+            <span>Hello - User Full Name</span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../update-profile/index.html">Update Profile</a></li>
+                <li><a href="../home/index.html">Home Page</a></li>
+                <li><a href="../add-new-flat/index.html">Add New Flat</a></li>
+                <li><a href="../all-flats/index.html">All Flats</a></li>
+            </ul>
+        </nav>
+        <div class="logout-container">
+            <button class="logout-btn">Log out</button>
+        </div>
+    </header>
+    <main>
+        <div class="filter-container">
+            <label for="city-filter">City:</label>
+            <input type="text" id="city-filter">
+
+            <label for="price-filter">Price Range:</label>
+            <input type="number" id="price-filter-min" placeholder="Min">
+            <input type="number" id="price-filter-max" placeholder="Max">
+
+            <label for="area-filter">Area Size Range:</label>
+            <input type="number" id="area-filter-min" placeholder="Min">
+            <input type="number" id="area-filter-max" placeholder="Max">
+
+            <button id="filter-btn" class="secondary-button">Filter</button>
+        </div>
+
+        <table id="flats-table">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Street Name</th>
+                    <th>Street Number</th>
+                    <th>Area Size</th>
+                    <th>Has AC</th>
+                    <th>Year Built</th>
+                    <th>Rent Price</th>
+                    <th>Date Available</th>
+                    <th>Favorite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <td>${flat.city}</td>
+                <td>${flat.streetName}</td>
+                <td>${flat.streetNumber}</td>
+                <td>${flat.areaSize}</td>
+                <td>${flat.hasAC}</td>
+                <td>${flat.yearBuilt}</td>
+                <td>${flat.rentPrice}</td>
+                <td>${flat.dateAvailable}</td>
+                <td><img src="../../assets/star-transparent.png" alt="" srcset="" width="30"></td> -->
+            </tbody>
+        </table>
+
+    </main>
+    <script src="../../js/controllers/users.js"></script>
+    <script src="../../js/controllers/auth.js"></script>
+    <script src="../../js/controllers/flats.js"></script>
+    <script src="index.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

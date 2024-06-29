@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/form_button.css">
+    <link rel="stylesheet" href="./css/form_input.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./pages/login/style.css">
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <button type="submit">Login</button>
+        </div>
+
+        <div>
+            <button class="secondary-button" type="button">Register</button>
+        </div>
+    </form>
+    <script src="./js/models/user.js"></script>
+    <script src="./js/controllers/users.js"></script>
+    <script src="./pages/login/index.js"></script>
+
+</body>
+
+</html>

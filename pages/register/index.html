@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/form_button.css">
+    <link rel="stylesheet" href="../../css/form_style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+    <form class="form-container">
+        <div class="left-column">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        </div>
+        <div class="right-column">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+    <script src="../../js/controllers/users.js"></script>
+    <script src="../../js/models/user.js"></script>
+    <script src="../../js/helpers/validations.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

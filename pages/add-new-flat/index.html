@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Flat</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/form_button.css">
+    <link rel="stylesheet" href="../../css/header_style.css">
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../../assets/company.png" alt="Company Logo">
+        </div>
+        <div class="user-info">
+            <span>Hello - User Full Name</span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../update-profile/index.html">Update Profile</a></li>
+                <li><a href="../home/index.html">Home Page</a></li>
+                <li><a href="../add-new-flat/index.html">Add New Flat</a></li>
+                <li><a href="../all-flats/index.html">All Flats</a></li>
+            </ul>
+        </nav>
+        <div class="logout-container">
+            <button class="logout-btn">Log out</button>
+        </div>
+    </header>
+    <form class="form-container">
+        <div class="right-column">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="streetName">Street Name:</label>
+            <input type="text" id="streetName" name="streetName" required>
+
+            <label for="streetNumber">Street Number:</label>
+            <input type="text" id="streetNumber" name="streetNumber" required>
+
+            <label for="dateAvailable">Date Available:</label>
+            <input type="date" id="dateAvailable" name="dateAvailable" required>
+
+        </div>
+        <div class="left-column">
+
+            <label for="areaSize">Area Size:</label>
+            <input type="number" id="areaSize" name="areaSize" required>
+
+            <label for="yearBuilt">Year Built:</label>
+            <input type="number" id="yearBuilt" name="yearBuilt" required>
+
+            <label for="rentPrice">Rent Price:</label>
+            <input type="number" id="rentPrice" name="rentPrice" required>
+
+            <label for="hasAC">Has AC:</label>
+            <input type="checkbox" id="hasAC" name="hasAC">
+        </div>
+
+        <button type="submit">Save</button>
+    </form>
+
+    <script src="../../js/controllers/users.js"></script>
+    <script src="../../js/controllers/auth.js"></script>
+    <script src="../../js/models/flat.js"></script>
+    <script src="../../js/controllers/flats.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

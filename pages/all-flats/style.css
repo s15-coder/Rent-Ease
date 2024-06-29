@@ -1,0 +1,88 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}
+
+#flats-table {
+    background-color: white;
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#flats-table th,
+#flats-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#flats-table th {
+    background-color: #f2f2f2;
+}
+
+#flats-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#flats-table tbody tr:hover {
+    background-color: #e6e6e6;
+}
+
+.star-image:hover {
+    cursor: pointer;
+}
+
+.secondary-button {
+    width: fit-content;
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #flats-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    #flats-table th,
+    #flats-table td {
+        white-space: nowrap;
+    }
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-container label {
+    margin-right: 10px;
+}
+
+.filter-container input[type="text"],
+.filter-container input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .filter-container input[type="text"],
+    .filter-container input[type="number"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

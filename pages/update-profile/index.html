@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="../../css/header_style.css">
+    <link rel="stylesheet" href="../../css/form_style.css">
+    <link rel="stylesheet" href="../../css/form_button.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../assets/company.png" alt="Company Logo">
+        </div>
+        <div class="user-info">
+            <span>Hello - User Full Name</span>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../update-profile/index.html">Update Profile</a></li>
+                <li><a href="../home/index.html">Home Page</a></li>
+                <li><a href="../add-new-flat/index.html">Add New Flat</a></li>
+                <li><a href="../all-flats/index.html">All Flats</a></li>
+            </ul>
+        </nav>
+        <div class="logout-container">
+            <button class="logout-btn">Log out</button>
+        </div>
+    </header>
+    <form class="form-container">
+        <div class="left-column">
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+        </div>
+        <div class="right-column">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+        </div>
+        <button type="submit">Update</button>
+    </form>
+    <script src="../../js/controllers/users.js"></script>
+    <script src="../../js/controllers/auth.js"></script>
+    <script src="../../js/helpers/validations.js"></script>
+    <script src="./index.js">  </script>
+</body>
+
+</html>
