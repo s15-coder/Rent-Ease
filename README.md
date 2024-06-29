@@ -1,4 +1,4 @@
-# Renting Project - Sergio Esteban Barragan Muñoz (Student ID: 23520)
+# Renting Project 
 
 It's a web application meant to help tenants to search for the right flat according to their desired preferences. It has been made using JS, HTML, CSS.
 
